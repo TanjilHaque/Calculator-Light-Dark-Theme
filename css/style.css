@@ -1,0 +1,83 @@
+:root{
+    --dark-background: #17171C;
+    --light-background: #F1F2F3;
+    --operationBtn-grayDarkMode: #4E505F;
+    --operationBtn-grayLightMode: #D2D3DA;
+    --operationBtn-blue: #4B5EFC;
+    --digitBtn-dark: #2E2F38;
+    --digitBtn-light: #FFFFFF;
+    --darkTextColor: #FFFFFF;
+    --lightTextColor: #000000;
+
+    --textFont : "Work Sans", sans-serif;
+}
+
+
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.appContainer{
+    height: 812px;
+    width: 375px;
+    background-color: purple;
+}
+
+.statusBar{
+    height: 44px;
+    background-color: aqua;
+}
+
+.toggleBtnContainer{
+    padding-top: 16px;
+    padding-bottom: 55px;
+    background-color: #4B5EFC;
+}
+
+#toggleBtn{
+    width: 72px;
+    height: 32px;
+}
+
+.equationTextBox{
+    width: 335px;
+    height: 47px;
+    background-color: peru;
+}
+
+.resultBox{
+    width: 335px;
+    height: 96px;
+    background-color: wheat;
+    margin: 16px 0;
+}
+
+.btnContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 16px;
+    background-color: pink;
+
+
+}
+
+.btnStyle{
+    width: 71.75px;
+    height: 72px;
+    border: none;
+    border-radius: 24px;
+}
+
+
+.homeIndicator{
+    margin-top: 32px;
+}
