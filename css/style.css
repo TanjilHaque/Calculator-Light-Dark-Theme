@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark-background: #17171C;
     --light-background: #F1F2F3;
     --operationBtn-grayDarkMode: #4E505F;
@@ -9,77 +9,172 @@
     --darkTextColor: #FFFFFF;
     --lightTextColor: #000000;
 
-    --textFont : "Work Sans", sans-serif;
+    --textFont: "Work Sans", sans-serif;
 }
 
 
 
 
-body{
+body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: var(--textFont);
 }
 
 
-.appContainer{
+.appContainer {
     height: 812px;
     width: 375px;
-    background-color: purple;
+    background-color: var(--dark-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.statusBar{
+.statusBar {
     height: 44px;
-    background-color: aqua;
+    background-color: var(--dark-background);
+    color: white;
 }
 
-.toggleBtnContainer{
-    padding-top: 16px;
-    padding-bottom: 55px;
-    background-color: #4B5EFC;
-}
 
-#toggleBtn{
+
+.toggle-container {
+    position: relative;
     width: 72px;
     height: 32px;
 }
 
-.equationTextBox{
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: #2E2F38;
+    border-radius: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background-color: #4E505F;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    background-color: #ffffff;
+}
+
+.toggle-checkbox:checked+.toggle-label::after {
+    transform: translateX(41px);
+    background-color: #D2D3DA;
+}
+
+.moonIcon {
+    z-index: 3;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.sunIcon {
+    z-index: 4;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.toggle-checkbox~.moonIcon{
+    display: block;
+}
+
+.toggle-checkbox~.sunIcon{
+    display: none;
+}
+
+.toggle-checkbox:checked~.moonIcon {
+    display: none;
+    /* Hide moon */
+}
+
+.toggle-checkbox:checked~.sunIcon {
+    display: block;
+    /* Show sun */
+}
+
+
+.equationTextBox__input{
     width: 335px;
     height: 47px;
-    background-color: peru;
+    background-color: var(--dark-background);
+    margin-top: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: 200;
+    color: var(--operationBtn-grayDarkMode);
+    border: none;
+    text-align: right;
 }
 
-.resultBox{
+.resultBox__input {
     width: 335px;
     height: 96px;
-    background-color: wheat;
-    margin: 16px 0;
+    background-color: var(--dark-background);
+    margin: 16px 20px;
+    font-size: 96px;
+    font-weight: 300;
+    color: var(--darkTextColor);
+    border: none;
+    text-align: right;
 }
 
-.btnContainer{
+.btnContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     gap: 16px;
-    background-color: pink;
 
 
 }
 
-.btnStyle{
+.btnStyle {
     width: 71.75px;
     height: 72px;
     border: none;
     border-radius: 24px;
     font-size: 32px;
     font-family: var(--textFont);
+    color: var(--darkTextColor);
+    background-color: var(--digitBtn-dark);
+    cursor: pointer;
+}
+
+.homeIndicator {
+    margin-top: 32px;
 }
 
 
-.homeIndicator{
-    margin-top: 32px;
+#btnForC, #btnFor00, #btnForPercent{
+    background-color: var(--operationBtn-grayDarkMode);
+}
+
+#btnForDivsion, #btnForMultiply, #btnForSubtraction, #btnForAddition, #btnForEqual{
+    background-color: var(--operationBtn-blue);
 }
