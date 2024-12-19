@@ -130,7 +130,11 @@ body {
     color: var(--darkTextColor);
     border: 1px solid gray;
     text-align: right;
-    overflow-x: scroll;
+    overflow: auto;
+}
+
+.equationTextBox__input::-webkit-scrollbar{
+    display: none;
 }
 
 input:focus{
@@ -147,9 +151,12 @@ input:focus{
     color: var(--darkTextColor);
     border: 1px solid gray;
     text-align: right;
-    overflow-x: scroll;
+    overflow: auto;
 }
 
+.resultBox::-webkit-scrollbar{
+    display: none;
+}
 
 
 .btnContainer {
