@@ -39,7 +39,7 @@ body {
 .statusBar {
     height: 44px;
     background-color: var(--dark-background);
-    color: white;
+    color: var(--digitBtn-light);
 }
 
 
@@ -127,12 +127,17 @@ body {
     margin-right: 20px;
     font-size: 40px;
     font-weight: 200;
-    color: var(--operationBtn-grayDarkMode);
-    border: none;
+    color: var(--darkTextColor);
+    border: 1px solid gray;
     text-align: right;
+    overflow-x: scroll;
 }
 
-.resultBox__input {
+input:focus{
+    outline: none;
+}
+
+.resultBox {
     width: 335px;
     height: 96px;
     background-color: var(--dark-background);
@@ -140,9 +145,12 @@ body {
     font-size: 96px;
     font-weight: 300;
     color: var(--darkTextColor);
-    border: none;
+    border: 1px solid gray;
     text-align: right;
+    overflow-x: scroll;
 }
+
+
 
 .btnContainer {
     display: flex;

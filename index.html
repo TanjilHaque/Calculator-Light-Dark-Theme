@@ -7,9 +7,6 @@
     <title>Calculator</title>
 
     <!-- ===================Font Awsome================ -->
-    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
-        href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d">
-
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
@@ -45,7 +42,7 @@
 
 <body>
     <div class="appContainer">
-        <div class="statusBar">
+        <div class="statusBar" id="statusBarHead">
             CALCULATOR
         </div>
         <div class="toggle-container">
@@ -54,11 +51,11 @@
             <img src="./images/moon.png" alt="moon_png" class="moonIcon">
             <img src="./images/sun.png" alt="sun_png" class="sunIcon">
         </div>
-        <div class="equationTextBox">
-            <input type="text" class="equationTextBox__input">
+        <div class="equationTextBox__input" id="operationTextBox">
+
         </div>
         <div class="resultBox">
-            <input type="text" class="resultBox__input">
+            
         </div>
 
         <div class="btnContainer">
