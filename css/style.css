@@ -12,9 +12,6 @@
     --textFont: "Work Sans", sans-serif;
 }
 
-
-
-
 body {
     height: 100vh;
     display: flex;
@@ -109,12 +106,10 @@ body {
 
 .toggle-checkbox:checked~.moonIcon {
     display: none;
-    /* Hide moon */
 }
 
 .toggle-checkbox:checked~.sunIcon {
     display: block;
-    /* Show sun */
 }
 
 
@@ -158,15 +153,11 @@ input:focus{
     display: none;
 }
 
-
 .btnContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     gap: 16px;
-
-
 }
 
 .btnStyle {

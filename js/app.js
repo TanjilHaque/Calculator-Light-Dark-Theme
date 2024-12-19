@@ -48,8 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
 const head = document.getElementById("statusBarHead");
 const toggleCheckbox = document.getElementById("toggle");
 const root = document.documentElement;
